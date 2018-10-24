@@ -1,0 +1,345 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+
+body,
+html{
+    height: 100%;
+}
+
+.section-padding {
+   padding: 90px 0px;    
+}
+
+.section-header h2 {
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+}
+.section-header span{
+    color: #ff0000;
+}
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    width: 156px;
+    height: 1px;
+    top: 100%;
+    left: 50%;
+    background: #ff0000;
+    margin-left: -78px;
+    margin-top: 8px;
+}
+
+.section-header h2::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff0000;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-radius: 50%;
+}
+/*
+===========================
+Google fonts 'Raleway','sans-serif'
+===========================
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,500i,700,700i');
+/*
+===========================
+Google fonts 'Montserrat','sans-serif'
+===========================
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600,700,700i');
+/*
+===========================
+  Main Header Area
+===========================
+*/
+.main-header {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.main-header::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .49;
+    background: #393738;
+}
+.logo img {
+    margin-top: 22px;
+}
+nav.main-menu {
+    
+}
+
+nav.main-menu ul {
+    float: right;
+}
+
+nav.main-menu ul li {
+    float: left;
+    margin-left: 47px;
+    list-style: none;
+}
+nav.main-menu ul li a {
+    padding: 42px 0px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+nav.main-menu ul li a:hover {
+    color: #fe320a;
+    transition: .3s;
+}
+/*
+===========================
+  End Main Header Area
+===========================
+*/
+
+/*
+===========================
+  Start Header Image
+===========================
+*/
+.header-img{
+    background: url('../images/header_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.header-img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: .42;
+    z-index: -1;
+}
+.d-table{
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    
+}
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.header-img .container,
+
+.header-img .row,
+.header-img .col-md-12{
+    height: 100%;
+}
+.header-content {
+    color: #fff;
+    margin-top: 70px;
+}
+
+.header-content h1 {
+    font-weight: 600;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 60px;
+}
+..header-content span {
+    color: #fe320a;
+}
+.header-content h1 span {
+    color: #fe320a;
+    font-weight: 700;
+}
+.header-content p {
+    width: 850px;
+    margin: 29px auto 4px auto;
+    font-weight: 400;
+    line-height: 24px;
+}
+.header-content a {
+    padding: 10px 45px;
+    margin-top: 57px;
+    background: #fe320a;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Raleway', 'sans-serif';
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+.header-content a:hover{
+    background: #fff;
+    color: red;
+}
+
+/*
+===========================
+  Section About 
+===========================
+*/
+.about-left img {
+    width: 100%;
+    height: auto;
+}
+
+.about-left {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.about-left .about-details-left {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.about-left .about-details-left::after {
+    content: '';
+    position: absolute;
+    background: #252525;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .69;
+}
+
+.about-details-left h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 26pt;
+}
+
+.about-details-left ul li {
+    display: inline;
+}
+
+.about-details-left ul li a {
+    display: inline-block;
+    background: #252525;
+    color: #fff;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: .3s;
+}
+
+.about-details-left ul li a:hover {
+    background: white;
+    color: #252525;
+}
+
+.about-right p {
+    font-weight: 300;
+    margin: 40px 0px;
+    font-size: 15px;
+}
+
+.about-right h3 {
+    font-family: sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+}
+.about-right a {
+    padding: 10px 17px;
+    background: #ff0000;
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
